@@ -1,4 +1,7 @@
+// Serach book arrow function and api set up......................................
+
 const searchBook = () => {
+
     // extract text from input field 
     const inputField = document.getElementById('input-section');
     const inputValue = inputField.value;
@@ -12,11 +15,9 @@ const searchBook = () => {
         .then(data => displayBook(data))
 
 
-
 }
 
-
-
+// Display Books arrow function......................................................
 const displayBook = (books) => {
 
     // main div to hold the search result items
@@ -47,7 +48,7 @@ const displayBook = (books) => {
 
 
     // Array is out from the object..................
-    const Books = books.docs.slice(0, 20);
+    const Books = books.docs.slice(0, 21);
     // looping through the array.................
 
     Books.forEach(Book => {
@@ -69,12 +70,6 @@ const displayBook = (books) => {
         mainDiv.appendChild(div);
 
     });
-
-
-
-
-
-
 
 
 }

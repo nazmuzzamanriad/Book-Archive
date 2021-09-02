@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Archive</title>
-    <!-- vanila css -->
-    <link rel="stylesheet" href="css/book.css">
-
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -16,26 +13,24 @@
 
 <body class="bg-light">
     <header>
-        <h1 class="text-success text-center">welcome to Book Archive</h1>
-
-
+        <h1 class="text-success text-center mt-5 mb-2">welcome to Book Archive</h1>
 
     </header>
 
 
     <main>
-        <!-- input section with button -->
-        <div class="input-group mb-3 w-50 mx-auto ">
-            <input id='input-section' type="text" class="form-control rounded-pill"
-                placeholder="search your desired book" aria-label="Recipient's username"
-                aria-describedby="button-addon2">
-            <button onclick="searchBook()" class="btn  btn btn-primary rounded-pill mx-1" type="button"
-                id="button-addon2">Search</button>
-        </div>
-
-        <div id=count-result-show class="text-center text-primary "></div>
-
-
+        <section>
+            <!-- input section with button -->
+            <div class=" input-group mb-3 w-50 mx-auto ">
+                <input id='input-section' type=" text" class="form-control rounded-pill"
+                    placeholder="search your desired book" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button onclick="searchBook()" class="btn  btn btn-primary rounded-pill mx-1" type="button"
+                    id="button-addon2">Search</button>
+            </div>
+            <!-- show count  result holding div  -->
+            <div id=count-result-show class="text-center text-primary "></div>
+        </section>
 
 
         <!-- display search  result -->
@@ -44,16 +39,7 @@
         </section>
 
 
-
-
-
-        </div>
-
-
     </main>
-
-
-
 
 
 
